@@ -1193,43 +1193,29 @@
                                         >
                                             Go Back
                                         </div>
-                                        <div
+
+                                        <button
+                                            class="btn btn-primary btn-lg"
+                                            type="button"
+                                            disabled=""
+                                            data-bs-toggle="tooltip"
+                                            data-bs-placement="top"
+                                            title=""
+                                            data-bs-original-title="Tooltip on top 2343"
                                             style="
-                                                font-weight: 500;
-                                                background: #fe7b10;
-                                                color: #fff;
-                                                border-radius: 5px;
-                                                padding: 0.85rem 2rem;
+                                                background-color: #ff9547;
+                                                border-color: #ff9547;
                                                 font-size: 0.875rem;
                                                 text-transform: uppercase;
-                                                width: fit-content;
+                                                font-weight: 500;
+                                                border-radius: 5px;
+                                                padding: 0.85rem 2rem;
                                                 display: flex;
                                                 align-items: center;
-                                                margin-left: 0.5rem;
                                             "
                                         >
-                                            <span class="material-icons" style="margin-right: 0.5rem;">policy </span><span>Verify with Agent</span>
-                                        </div>
-                                        <div
-                                            style="
-                                                font-weight: 500;
-                                                background: transparent;
-                                                color: #fe7b10;
-                                                border: 1px solid #fe7b10;
-                                                border-radius: 5px;
-                                                padding: 0.85rem 2rem;
-                                                font-size: 0.875rem;
-                                                text-transform: uppercase;
-                                                width: fit-content;
-                                                display: none;
-                                                align-items: center;
-                                            "
-                                        >
-                                            <span class="material-icons" style="margin-right: 0.5rem;">
-                                                fact_check
-                                            </span>
-                                            <span>Save and Continue</span>
-                                        </div>
+                                            <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true" style="margin-right: 0.5rem;"></span>Verifying with Agent...
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -1323,5 +1309,11 @@
             </div>
         </main>
         <script src="https://getbootstrap.com/docs/5.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+            var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+            })
+        </script>
     </body>
 </html>
