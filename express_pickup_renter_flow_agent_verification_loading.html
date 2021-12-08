@@ -323,7 +323,9 @@
                                                         </div>
                                                         <div style="">
                                                             <div style="display: flex; align-items: center;">
-                                                                <p style="font-size: 1rem; font-weight: 300; margin: 0;">Show the agent your express pick-up code below.</p>
+                                                                <p style="font-size: 1rem; font-weight: 300; margin: 0;">
+                                                                    Show the agent your express pick-up code below. The agent will verify your identity, documents, and vehicle condition before handing you the keys.
+                                                                </p>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -1189,6 +1191,7 @@
                                                 text-transform: capitalize !important;
                                                 text-decoration: underline;
                                                 margin-right: 0.5rem;
+                                                display: none;
                                             "
                                         >
                                             Go Back
@@ -1310,10 +1313,10 @@
         </main>
         <script src="https://getbootstrap.com/docs/5.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
         <script type="text/javascript">
-            var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+            var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
             var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-            return new bootstrap.Tooltip(tooltipTriggerEl)
-            })
+                return new bootstrap.Tooltip(tooltipTriggerEl);
+            });
         </script>
     </body>
 </html>
