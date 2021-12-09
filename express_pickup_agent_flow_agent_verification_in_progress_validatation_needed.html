@@ -807,7 +807,7 @@
                         <div class="row">
                             <div class="col-12">
                                 <div class="form-check" style="padding-top: 1rem; padding-bottom: 1rem;">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheck" />
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheck" onclick="checkbox_changed(this)"/>
                                     <label class="form-check-label text-danger" for="flexCheck" style="font-weight: 500;">The information is correct and valid</label>
                                 </div>
                             </div>
@@ -839,7 +839,7 @@
                                         >
                                             Go Back
                                         </div>
-                                        <a href="#" class="btn btn-primary btn-lg btn-with-icon disabled" tabindex="-1" role="button" aria-disabled="true">
+                                        <a href="#" id="submit_button" class="btn btn-primary btn-lg btn-with-icon disabled" tabindex="-1" role="button" aria-disabled="true">
                                             <span class="material-icons btn-icon" style="font-size: 22px; margin-right: 0.25rem;">
                                                 save
                                             </span>
@@ -938,5 +938,17 @@
             </div>
         </main>
         <script src="https://getbootstrap.com/docs/5.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            function checkbox_changed(t){
+                //If the checkbox has been checked
+                if(t.checked){
+                    //Set the disabled property to FALSE and enable the button.
+                    document.getElementById("submit_button").disabled = false;
+                } else{
+                    //Otherwise, disable the submit button.
+                    document.getElementById("submit_button").disabled = true;
+                }
+            }
+        </script>
     </body>
 </html>
