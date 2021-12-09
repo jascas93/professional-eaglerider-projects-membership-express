@@ -924,10 +924,10 @@
                 //If the checkbox has been checked
                 if(t.checked){
                     //Set the disabled property to FALSE and enable the button.
-                    document.getElementById("submit_button").disabled = false;
+                    document.getElementById("submit_button").classList.remove("disabled");
                 } else{
                     //Otherwise, disable the submit button.
-                    document.getElementById("submit_button").disabled = true;
+                    document.getElementById("submit_button").classList.add("disabled");
                 }
             }
         </script>
