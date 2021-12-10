@@ -844,11 +844,11 @@
                                         <div class="accordion-item" style="border-color: #5d5d5d; box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;">
                                             <h2 class="accordion-header" id="headingTwo">
                                                 <button
-                                                    class="accordion-button collapsed"
+                                                    class="accordion-button"
                                                     type="button"
                                                     data-bs-toggle="collapse"
                                                     data-bs-target="#collapseTwo"
-                                                    aria-expanded="false"
+                                                    aria-expanded="true"
                                                     aria-controls="collapseTwo"
                                                     style="background-color: #f9f9f9; font-weight: 500;"
                                                 >
@@ -858,11 +858,72 @@
                                                     Odometer &amp; Fuel
                                                 </button>
                                             </h2>
-                                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                                                <div class="accordion-body">
-                                                    <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes
-                                                    control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth
-                                                    noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                            <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo" data-bs-parent="#accordionExample" style="">
+                                                <div class="accordion-body" style="padding: 0;">
+                                                    <div style="">
+                                                        <div style="">
+                                                            <div style="padding: 1.5rem; background: #f9f9f9;">
+                                                                <div style="">
+                                                                    <div class="row">
+                                                                        <div class="col-lg-12">
+                                                                            <div style="display: flex; align-items: flex-start;">
+                                                                                <span class="material-icons-outlined" style="font-size: 18px; color: #3a3a3a; margin-right: 0.25rem;">
+                                                                                    info
+                                                                                </span>
+                                                                                <p style="margin: 0; font-weight: 300; font-size: 0.875rem; color: #3a3a3a;">
+                                                                                    Document the motorcycle's current odometer mileage and fuel level.
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div style="padding: 1.5rem;">
+                                                                <div style="">
+                                                                    <div class="row" style="">
+                                                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 margin-b-1">
+                                                                            <div class="form-floating mb-3">
+                                                                                <input type="text" class="form-control" id="floatingInput" value="5023" placeholder="A1B1C1" />
+                                                                                <label for="floatingInput" style="">Odometer (miles)</label>
+                                                                            </div>
+                                                                            <div style="background: #ffecdd; padding: 0.5rem; margin-top: 0.5rem; display: flex; align-items: flex-start;">
+                                                                                <span class="material-icons" style="font-size: 16px; color: #f26b00; margin-right: 0.25rem;">tips_and_updates</span>
+                                                                                <p style="margin: 0; line-height: initial; font-size: 0.75rem; color: rgba(0, 0, 0, 0.6);">Double check that the units are in miles and not kilometers.</p>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 margin-b-1">
+                                                                            <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                                                                                <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" />
+                                                                                <label class="btn btn-outline-primary fuel-level-buttons" for="btnradio1">1</label>
+
+                                                                                <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off" />
+                                                                                <label class="btn btn-outline-primary fuel-level-buttons" for="btnradio2">2</label>
+
+                                                                                <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off" />
+                                                                                <label class="btn btn-outline-primary fuel-level-buttons" for="btnradio3">3</label>
+
+                                                                                <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off" />
+                                                                                <label class="btn btn-outline-primary fuel-level-buttons" for="btnradio4">4</label>
+
+                                                                                <input type="radio" class="btn-check" name="btnradio" id="btnradio5" autocomplete="off" />
+                                                                                <label class="btn btn-outline-primary fuel-level-buttons" for="btnradio5">5</label>
+
+                                                                                <input type="radio" class="btn-check" name="btnradio" id="btnradio6" autocomplete="off" />
+                                                                                <label class="btn btn-outline-primary fuel-level-buttons" for="btnradio6">6</label>
+
+                                                                                <input type="radio" class="btn-check" name="btnradio" id="btnradio7" autocomplete="off" />
+                                                                                <label class="btn btn-outline-primary fuel-level-buttons" for="btnradio7">7</label>
+
+                                                                                <input type="radio" class="btn-check" name="btnradio" id="btnradio8" autocomplete="off" />
+                                                                                <label class="btn btn-outline-primary fuel-level-buttons" for="btnradio8">8</label>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -880,7 +941,7 @@
                                                     <span class="material-icons" style="margin-right: 0.25rem; color: #797979;">radio_button_unchecked </span>Safety Check Inspection
                                                 </button>
                                             </h2>
-                                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample" style="">
                                                 <div class="accordion-body">
                                                     <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes
                                                     control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth
