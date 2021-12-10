@@ -257,9 +257,9 @@
                     </div>
                 </div>
             </nav>
-            <div id="main-canvas-wrapper">
+            <div id="main-canvas-wrapper" style="">
                 <div id="main-canvas-body" style="">
-                    <div class="container main-container-canvas" style="">
+                    <div class="container main-container-canvas" style="min-height: auto;">
                         <div class="row">
                             <div class="col-lg-12">
                                 <div class="page_title_hdr" style="display: flex; flex-flow: column; align-items: flex-start; justify-content: space-between; padding: 1rem 0; width: auto;">
@@ -312,22 +312,22 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="accordion hidden-for-large" id="accordionExample2" style="margin: 0;">
+                                <div class="accordion hidden-for-large" id="accordion_sm_1" style="margin-bottom: 2rem;">
                                     <div class="accordion-item" style="border: 1px solid #ffac71; box-shadow: rgb(0 0 0 / 10%) 0px 1px 2px 0px;">
-                                        <h2 class="accordion-header" id="headingTwo">
+                                        <h2 class="accordion-header" id="accordion_sm_hdr_1">
                                             <button
                                                 class="accordion-button collapsed"
                                                 type="button"
                                                 data-bs-toggle="collapse"
-                                                data-bs-target="#collapseTwo"
+                                                data-bs-target="#accordion_sm_body_1"
                                                 aria-expanded="false"
-                                                aria-controls="collapseTwo"
+                                                aria-controls="accordion_sm_body_1"
                                                 style="background: #ffecdd; font-weight: 600; text-transform: uppercase;"
                                             >
                                                 Reservation Details
                                             </button>
                                         </h2>
-                                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample2" style="">
+                                        <div id="accordion_sm_body_1" class="accordion-collapse collapse" aria-labelledby="accordion_sm_hdr_1" data-bs-parent="#accordion_sm_1" style="">
                                             <div class="accordion-body">
                                                 <div style="">
                                                     <div style="">
@@ -436,409 +436,492 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div style="margin-top: 2rem;">
-                                    <div style="display: flex; justify-content: space-between;">
-                                        <div style="background-color: #3a3a3a; border-bottom: 4px solid #dadada; padding: 0.5rem 1rem; border-top-left-radius: 8px; border-top-right-radius: 8px; width: fit-content;">
-                                            <p style="color: #fff; font-size: 0.875rem; font-weight: 300; margin: 0;">Vehicle Condition Images</p>
+
+                                <div style="margin-bottom: 2rem;">
+                                    <div class="accordion" id="accordionExample">
+                                        <div class="accordion-item" style="border-color: #5d5d5d; box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;">
+                                            <h2 class="accordion-header" id="headingOne" style="">
+                                                <button
+                                                    class="accordion-button collapsed"
+                                                    type="button"
+                                                    data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseOne"
+                                                    aria-expanded="false"
+                                                    aria-controls="collapseOne"
+                                                    style="background-color: #f9f9f9; font-weight: 500;"
+                                                >
+                                                    <span class="material-icons text-success" style="margin-right: 0.25rem;">
+                                                        task_alt
+                                                    </span>
+                                                    Vehicle Condition Images
+                                                </button>
+                                            </h2>
+                                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample" style="">
+                                                <div class="accordion-body" style="padding: 0;">
+                                                    <div style="">
+                                                        <div style="">
+                                                            <div style="padding: 1.5rem; background: #f9f9f9;">
+                                                                <div style="">
+                                                                    <div class="row">
+                                                                        <div class="col-lg-12">
+                                                                            <div style="display: flex; align-items: flex-start;">
+                                                                                <span class="material-icons-outlined" style="font-size: 18px; color: #3a3a3a; margin-right: 0.25rem;">
+                                                                                    info
+                                                                                </span>
+                                                                                <p style="margin: 0; font-weight: 300; font-size: 0.875rem; color: #3a3a3a;">
+                                                                                    Document the motorcycle's current condition. A minimum of 6 images are required — front, rear, left side, right side, vin, and odometer. You may take as
+                                                                                    many photos as needed to ensure full documentation of all existing conditions are recorded such as scatches, dents, pre-existing damage, etc.
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div id="condition_imgs_empty" style="padding: 1.5rem; display: none;">
+                                                                <div class="row row-cols-1 row-cols-md-2 g-4">
+                                                                    <div class="col">
+                                                                        <div style="margin-bottom: 0.5rem;">
+                                                                            <p style="margin: 0; font-weight: 500; text-transform: uppercase; color: #898989; font-size: 0.875rem;">Front</p>
+                                                                        </div>
+                                                                        <div class="card image-picker">
+                                                                            <div class="card-body" style="">
+                                                                                <div
+                                                                                    class="image-picker-placeholder"
+                                                                                    style="
+                                                                                        background: #fe7b10;
+                                                                                        -webkit-mask-image: url(https://jascas93.github.io/professional-eaglerider-web-assets/bike_front.png);
+                                                                                        -webkit-mask-repeat: no-repeat;
+                                                                                        -webkit-mask-size: 50%;
+                                                                                        -webkit-mask-position: 50%;
+                                                                                    "
+                                                                                ></div>
+                                                                                <div style="display: flex; align-items: center; justify-content: center;">
+                                                                                    <span class="material-icons" style="font-size: 2rem; color: #fe7b10;">add_a_photo</span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="col">
+                                                                        <div style="margin-bottom: 0.5rem;">
+                                                                            <p style="margin: 0; font-weight: 500; text-transform: uppercase; color: #898989; font-size: 0.875rem;">Left Side</p>
+                                                                        </div>
+                                                                        <div class="card image-picker">
+                                                                            <div class="card-body" style="">
+                                                                                <div
+                                                                                    class="image-picker-placeholder"
+                                                                                    style="
+                                                                                        background: #fe7b10;
+                                                                                        -webkit-mask-image: url(https://jascas93.github.io/professional-eaglerider-web-assets/bike_left_side.png);
+                                                                                        -webkit-mask-repeat: no-repeat;
+                                                                                        -webkit-mask-size: 50%;
+                                                                                        -webkit-mask-position: 50%;
+                                                                                    "
+                                                                                ></div>
+                                                                                <div style="display: flex; align-items: center; justify-content: center;">
+                                                                                    <span class="material-icons" style="font-size: 2rem; color: #fe7b10;">add_a_photo</span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col">
+                                                                        <div style="margin-bottom: 0.5rem;">
+                                                                            <p style="margin: 0; font-weight: 500; text-transform: uppercase; color: #898989; font-size: 0.875rem;">Rear</p>
+                                                                        </div>
+                                                                        <div class="card image-picker">
+                                                                            <div class="card-body" style="">
+                                                                                <div
+                                                                                    class="image-picker-placeholder"
+                                                                                    style="
+                                                                                        background: #fe7b10;
+                                                                                        -webkit-mask-image: url(https://jascas93.github.io/professional-eaglerider-web-assets/bike_rear.png);
+                                                                                        -webkit-mask-repeat: no-repeat;
+                                                                                        -webkit-mask-size: 50%;
+                                                                                        -webkit-mask-position: 50%;
+                                                                                    "
+                                                                                ></div>
+                                                                                <div style="display: flex; align-items: center; justify-content: center;">
+                                                                                    <span class="material-icons" style="font-size: 2rem; color: #fe7b10;">add_a_photo</span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col">
+                                                                        <div style="margin-bottom: 0.5rem;">
+                                                                            <p style="margin: 0; font-weight: 500; text-transform: uppercase; color: #898989; font-size: 0.875rem;">Right Side</p>
+                                                                        </div>
+                                                                        <div class="card image-picker">
+                                                                            <div class="card-body" style="">
+                                                                                <div
+                                                                                    class="image-picker-placeholder"
+                                                                                    style="
+                                                                                        background: #fe7b10;
+                                                                                        -webkit-mask-image: url(https://jascas93.github.io/professional-eaglerider-web-assets/bike_right_side.png);
+                                                                                        -webkit-mask-repeat: no-repeat;
+                                                                                        -webkit-mask-size: 50%;
+                                                                                        -webkit-mask-position: 50%;
+                                                                                    "
+                                                                                ></div>
+                                                                                <div style="display: flex; align-items: center; justify-content: center;">
+                                                                                    <span class="material-icons" style="font-size: 2rem; color: #fe7b10;">add_a_photo</span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col">
+                                                                        <div style="margin-bottom: 0.5rem;">
+                                                                            <p style="margin: 0; font-weight: 500; text-transform: uppercase; color: #898989; font-size: 0.875rem;">VIN</p>
+                                                                        </div>
+                                                                        <div class="card image-picker">
+                                                                            <div class="card-body" style="">
+                                                                                <div
+                                                                                    class="image-picker-placeholder"
+                                                                                    style="
+                                                                                        background: #fe7b10;
+                                                                                        -webkit-mask-image: url(https://img.icons8.com/nolan/96/barcode.png);
+                                                                                        -webkit-mask-repeat: no-repeat;
+                                                                                        -webkit-mask-size: 25%;
+                                                                                        -webkit-mask-position: 50%;
+                                                                                    "
+                                                                                ></div>
+                                                                                <div style="display: flex; align-items: center; justify-content: center;">
+                                                                                    <span class="material-icons" style="font-size: 2rem; color: #fe7b10;">add_a_photo</span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col">
+                                                                        <div style="margin-bottom: 0.5rem;">
+                                                                            <p style="margin: 0; font-weight: 500; text-transform: uppercase; color: #898989; font-size: 0.875rem;">Odometer</p>
+                                                                        </div>
+                                                                        <div class="card image-picker">
+                                                                            <div class="card-body" style="">
+                                                                                <div
+                                                                                    class="image-picker-placeholder"
+                                                                                    style="
+                                                                                        background: #fe7b10;
+                                                                                        -webkit-mask-image: url(https://img.icons8.com/ios-filled/100/000000/odometer.png);
+                                                                                        -webkit-mask-repeat: no-repeat;
+                                                                                        -webkit-mask-size: 25%;
+                                                                                        -webkit-mask-position: 50%;
+                                                                                    "
+                                                                                ></div>
+                                                                                <div style="display: flex; align-items: center; justify-content: center;">
+                                                                                    <span class="material-icons" style="font-size: 2rem; color: #fe7b10;">add_a_photo</span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div id="condition_imgs_filled" style="padding: 1.5rem;">
+                                                                <div class="row row-cols-1 row-cols-md-2 g-4">
+                                                                    <div class="col">
+                                                                        <div style="margin-bottom: 0.5rem;">
+                                                                            <p style="margin: 0; font-weight: 500; text-transform: uppercase; color: #898989; font-size: 0.875rem;">Front</p>
+                                                                        </div>
+                                                                        <div class="card image-picker">
+                                                                            <div class="card-body" style="">
+                                                                                <div
+                                                                                    class="image-picker-placeholder"
+                                                                                    style="
+                                                                                        background-image: url(https://www.eaglerider.com/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBOGdaT2c9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--6125bab54f4cadb720f63f74a2f6a61c584424f5/3114953);
+                                                                                        background-size: cover;
+                                                                                        background-repeat: no-repeat;
+                                                                                        background-position: 50% 50%;
+                                                                                        border-radius: 2px;
+                                                                                    "
+                                                                                >
+                                                                                    <img
+                                                                                        src="https://www.eaglerider.com/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBOGdaT2c9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--6125bab54f4cadb720f63f74a2f6a61c584424f5/3114953"
+                                                                                        style="width: inherit; height: inherit; visibility: hidden;"
+                                                                                    />
+                                                                                </div>
+                                                                                <div style="margin-top: 0.5rem;">
+                                                                                    <div style="display: flex; align-items: center;">
+                                                                                        <div class="col-10">
+                                                                                            <p style="font-size: 0.75rem; font-weight: 300; color: #3a3a3a; margin-bottom: 0;">Dec 1 2021, 12:45 PM</p>
+                                                                                        </div>
+                                                                                        <div class="col-2">
+                                                                                            <span class="material-icons" style="color: #5d5d5d; float: right;">
+                                                                                                delete_forever
+                                                                                            </span>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="col">
+                                                                        <div style="margin-bottom: 0.5rem;">
+                                                                            <p style="margin: 0; font-weight: 500; text-transform: uppercase; color: #898989; font-size: 0.875rem;">Left Side</p>
+                                                                        </div>
+                                                                        <div class="card image-picker">
+                                                                            <div class="card-body" style="">
+                                                                                <div
+                                                                                    class="image-picker-placeholder"
+                                                                                    style="
+                                                                                        background-image: url(https://www.eaglerider.com/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBNzRaT2c9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--a58a98d3e3f469ded61483a0e2ae6e78aea4a2e1/3114953);
+                                                                                        background-size: cover;
+                                                                                        background-repeat: no-repeat;
+                                                                                        background-position: 50% 50%;
+                                                                                        border-radius: 2px;
+                                                                                    "
+                                                                                >
+                                                                                    <img
+                                                                                        src="https://www.eaglerider.com/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBOGdaT2c9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--6125bab54f4cadb720f63f74a2f6a61c584424f5/3114953"
+                                                                                        style="width: inherit; height: inherit; visibility: hidden;"
+                                                                                    />
+                                                                                </div>
+                                                                                <div style="margin-top: 0.5rem;">
+                                                                                    <div style="display: flex; align-items: center;">
+                                                                                        <div class="col-10">
+                                                                                            <p style="font-size: 0.75rem; font-weight: 300; color: #3a3a3a; margin-bottom: 0;">Dec 1 2021, 12:45 PM</p>
+                                                                                        </div>
+                                                                                        <div class="col-2">
+                                                                                            <span class="material-icons" style="color: #5d5d5d; float: right;">
+                                                                                                delete_forever
+                                                                                            </span>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col">
+                                                                        <div style="margin-bottom: 0.5rem;">
+                                                                            <p style="margin: 0; font-weight: 500; text-transform: uppercase; color: #898989; font-size: 0.875rem;">Rear</p>
+                                                                        </div>
+                                                                        <div class="card image-picker">
+                                                                            <div class="card-body" style="">
+                                                                                <div
+                                                                                    class="image-picker-placeholder"
+                                                                                    style="
+                                                                                        background-image: url(https://www.eaglerider.com/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBOFlaT2c9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--003248b244514e5dcae4fd91ed9dc24ee607c792/3114953);
+                                                                                        background-size: cover;
+                                                                                        background-repeat: no-repeat;
+                                                                                        background-position: 50% 50%;
+                                                                                        border-radius: 2px;
+                                                                                    "
+                                                                                >
+                                                                                    <img
+                                                                                        src="https://www.eaglerider.com/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBOGdaT2c9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--6125bab54f4cadb720f63f74a2f6a61c584424f5/3114953"
+                                                                                        style="width: inherit; height: inherit; visibility: hidden;"
+                                                                                    />
+                                                                                </div>
+                                                                                <div style="margin-top: 0.5rem;">
+                                                                                    <div style="display: flex; align-items: center;">
+                                                                                        <div class="col-10">
+                                                                                            <p style="font-size: 0.75rem; font-weight: 300; color: #3a3a3a; margin-bottom: 0;">Dec 1 2021, 12:45 PM</p>
+                                                                                        </div>
+                                                                                        <div class="col-2">
+                                                                                            <span class="material-icons" style="color: #5d5d5d; float: right;">
+                                                                                                delete_forever
+                                                                                            </span>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col">
+                                                                        <div style="margin-bottom: 0.5rem;">
+                                                                            <p style="margin: 0; font-weight: 500; text-transform: uppercase; color: #898989; font-size: 0.875rem;">Right Side</p>
+                                                                        </div>
+                                                                        <div class="card image-picker">
+                                                                            <div class="card-body" style="">
+                                                                                <div
+                                                                                    class="image-picker-placeholder"
+                                                                                    style="
+                                                                                        background-image: url(https://www.eaglerider.com/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBNzBaT2c9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--3f5255e543d70a774e08c58f8f3c7eea1fef2c57/3114953);
+                                                                                        background-size: cover;
+                                                                                        background-repeat: no-repeat;
+                                                                                        background-position: 50% 50%;
+                                                                                        border-radius: 2px;
+                                                                                    "
+                                                                                >
+                                                                                    <img
+                                                                                        src="https://www.eaglerider.com/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBOGdaT2c9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--6125bab54f4cadb720f63f74a2f6a61c584424f5/3114953"
+                                                                                        style="width: inherit; height: inherit; visibility: hidden;"
+                                                                                    />
+                                                                                </div>
+                                                                                <div style="margin-top: 0.5rem;">
+                                                                                    <div style="display: flex; align-items: center;">
+                                                                                        <div class="col-10">
+                                                                                            <p style="font-size: 0.75rem; font-weight: 300; color: #3a3a3a; margin-bottom: 0;">Dec 1 2021, 12:45 PM</p>
+                                                                                        </div>
+                                                                                        <div class="col-2">
+                                                                                            <span class="material-icons" style="color: #5d5d5d; float: right;">
+                                                                                                delete_forever
+                                                                                            </span>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col">
+                                                                        <div style="margin-bottom: 0.5rem;">
+                                                                            <p style="margin: 0; font-weight: 500; text-transform: uppercase; color: #898989; font-size: 0.875rem;">VIN</p>
+                                                                        </div>
+                                                                        <div class="card image-picker">
+                                                                            <div class="card-body" style="">
+                                                                                <div
+                                                                                    class="image-picker-placeholder"
+                                                                                    style="
+                                                                                        background-image: url(https://www.eaglerider.com/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBN1laT2c9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--1a05d4ee8064bf6727de77151f1f260469ee2995/3114953);
+                                                                                        background-size: cover;
+                                                                                        background-repeat: no-repeat;
+                                                                                        background-position: 50% 50%;
+                                                                                        border-radius: 2px;
+                                                                                    "
+                                                                                >
+                                                                                    <img
+                                                                                        src="https://www.eaglerider.com/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBOGdaT2c9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--6125bab54f4cadb720f63f74a2f6a61c584424f5/3114953"
+                                                                                        style="width: inherit; height: inherit; visibility: hidden;"
+                                                                                    />
+                                                                                </div>
+                                                                                <div style="margin-top: 0.5rem;">
+                                                                                    <div style="display: flex; align-items: center;">
+                                                                                        <div class="col-10">
+                                                                                            <p style="font-size: 0.75rem; font-weight: 300; color: #3a3a3a; margin-bottom: 0;">Dec 1 2021, 12:45 PM</p>
+                                                                                        </div>
+                                                                                        <div class="col-2">
+                                                                                            <span class="material-icons" style="color: #5d5d5d; float: right;">
+                                                                                                delete_forever
+                                                                                            </span>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col">
+                                                                        <div style="margin-bottom: 0.5rem;">
+                                                                            <p style="margin: 0; font-weight: 500; text-transform: uppercase; color: #898989; font-size: 0.875rem;">Odometer</p>
+                                                                        </div>
+                                                                        <div class="card image-picker">
+                                                                            <div class="card-body" style="">
+                                                                                <div
+                                                                                    class="image-picker-placeholder"
+                                                                                    style="
+                                                                                        background-image: url(https://www.eaglerider.com/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBNE1aT2c9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--952ea463e6cef8ef51988084dba6960de9d82eff/3114953);
+                                                                                        background-size: cover;
+                                                                                        background-repeat: no-repeat;
+                                                                                        background-position: 50% 50%;
+                                                                                        border-radius: 2px;
+                                                                                    "
+                                                                                >
+                                                                                    <img
+                                                                                        src="https://www.eaglerider.com/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBOGdaT2c9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--6125bab54f4cadb720f63f74a2f6a61c584424f5/3114953"
+                                                                                        style="width: inherit; height: inherit; visibility: hidden;"
+                                                                                    />
+                                                                                </div>
+                                                                                <div style="margin-top: 0.5rem;">
+                                                                                    <div style="display: flex; align-items: center;">
+                                                                                        <div class="col-10">
+                                                                                            <p style="font-size: 0.75rem; font-weight: 300; color: #3a3a3a; margin-bottom: 0;">Dec 1 2021, 12:45 PM</p>
+                                                                                        </div>
+                                                                                        <div class="col-2">
+                                                                                            <span class="material-icons" style="color: #5d5d5d; float: right;">
+                                                                                                delete_forever
+                                                                                            </span>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item" style="border-color: #5d5d5d; box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;">
+                                            <h2 class="accordion-header" id="headingTwo">
+                                                <button
+                                                    class="accordion-button collapsed"
+                                                    type="button"
+                                                    data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseTwo"
+                                                    aria-expanded="false"
+                                                    aria-controls="collapseTwo"
+                                                    style="background-color: #f9f9f9; font-weight: 500;"
+                                                >
+                                                    <span class="material-icons text-success" style="margin-right: 0.25rem;">
+                                                        task_alt
+                                                    </span>
+                                                    Odometer &amp; Fuel
+                                                </button>
+                                            </h2>
+                                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                    <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes
+                                                    control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth
+                                                    noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item" style="border-color: #5d5d5d; box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;">
+                                            <h2 class="accordion-header" id="headingThree">
+                                                <button
+                                                    class="accordion-button collapsed"
+                                                    type="button"
+                                                    data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseThree"
+                                                    aria-expanded="false"
+                                                    aria-controls="collapseThree"
+                                                    style="background-color: #f9f9f9; font-weight: 400; color: #797979;"
+                                                >
+                                                    <span class="material-icons" style="margin-right: 0.25rem; color: #797979;">radio_button_unchecked </span>Safety Check Inspection
+                                                </button>
+                                            </h2>
+                                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                    <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes
+                                                    control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth
+                                                    noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div style="border-radius: 8px; border-top-left-radius: 0px; box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;">
-                                        <div style="padding: 1.5rem; background: #f9f9f9; border-top-right-radius: 8px;">
-                                            <div style="">
-                                                <div class="row">
-                                                    <div class="col-lg-12">
-                                                        <div style="display: flex; align-items: flex-start;">
-                                                            <span class="material-icons-outlined" style="font-size: 18px; color: #3a3a3a; margin-right: 0.25rem;">
-                                                                info
-                                                            </span>
-                                                            <p style="margin: 0; font-weight: 300; font-size: 0.875rem; color: #3a3a3a;">
-                                                                Document the motorcycle's current condition. A minimum of 6 images are required — front, rear, left side, right side, vin, and odometer. You may take as many photos as needed
-                                                                to ensure full documentation of all existing conditions are recorded such as scatches, dents, pre-existing damage, etc.
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div id="condition_imgs_empty" style="padding: 1.5rem; display: none;">
-                                            <div class="row row-cols-1 row-cols-md-2 g-4">
-                                                <div class="col">
-                                                    <div style="margin-bottom: 0.5rem;">
-                                                        <p style="margin: 0; font-weight: 500; text-transform: uppercase; color: #898989; font-size: 0.875rem;">Front</p>
-                                                    </div>
-                                                    <div class="card image-picker">
-                                                        <div class="card-body" style="">
-                                                            <div
-                                                                class="image-picker-placeholder"
-                                                                style="
-                                                                    background: #fe7b10;
-                                                                    -webkit-mask-image: url(https://jascas93.github.io/professional-eaglerider-web-assets/bike_front.png);
-                                                                    -webkit-mask-repeat: no-repeat;
-                                                                    -webkit-mask-size: 50%;
-                                                                    -webkit-mask-position: 50%;
-                                                                "
-                                                            ></div>
-                                                            <div style="display: flex; align-items: center; justify-content: center;">
-                                                                <span class="material-icons" style="font-size: 2rem; color: #fe7b10;">add_a_photo</span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="col">
-                                                    <div style="margin-bottom: 0.5rem;">
-                                                        <p style="margin: 0; font-weight: 500; text-transform: uppercase; color: #898989; font-size: 0.875rem;">Left Side</p>
-                                                    </div>
-                                                    <div class="card image-picker">
-                                                        <div class="card-body" style="">
-                                                            <div
-                                                                class="image-picker-placeholder"
-                                                                style="
-                                                                    background: #fe7b10;
-                                                                    -webkit-mask-image: url(https://jascas93.github.io/professional-eaglerider-web-assets/bike_left_side.png);
-                                                                    -webkit-mask-repeat: no-repeat;
-                                                                    -webkit-mask-size: 50%;
-                                                                    -webkit-mask-position: 50%;
-                                                                "
-                                                            ></div>
-                                                            <div style="display: flex; align-items: center; justify-content: center;">
-                                                                <span class="material-icons" style="font-size: 2rem; color: #fe7b10;">add_a_photo</span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col">
-                                                    <div style="margin-bottom: 0.5rem;">
-                                                        <p style="margin: 0; font-weight: 500; text-transform: uppercase; color: #898989; font-size: 0.875rem;">Rear</p>
-                                                    </div>
-                                                    <div class="card image-picker">
-                                                        <div class="card-body" style="">
-                                                            <div
-                                                                class="image-picker-placeholder"
-                                                                style="
-                                                                    background: #fe7b10;
-                                                                    -webkit-mask-image: url(https://jascas93.github.io/professional-eaglerider-web-assets/bike_rear.png);
-                                                                    -webkit-mask-repeat: no-repeat;
-                                                                    -webkit-mask-size: 50%;
-                                                                    -webkit-mask-position: 50%;
-                                                                "
-                                                            ></div>
-                                                            <div style="display: flex; align-items: center; justify-content: center;">
-                                                                <span class="material-icons" style="font-size: 2rem; color: #fe7b10;">add_a_photo</span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col">
-                                                    <div style="margin-bottom: 0.5rem;">
-                                                        <p style="margin: 0; font-weight: 500; text-transform: uppercase; color: #898989; font-size: 0.875rem;">Right Side</p>
-                                                    </div>
-                                                    <div class="card image-picker">
-                                                        <div class="card-body" style="">
-                                                            <div
-                                                                class="image-picker-placeholder"
-                                                                style="
-                                                                    background: #fe7b10;
-                                                                    -webkit-mask-image: url(https://jascas93.github.io/professional-eaglerider-web-assets/bike_right_side.png);
-                                                                    -webkit-mask-repeat: no-repeat;
-                                                                    -webkit-mask-size: 50%;
-                                                                    -webkit-mask-position: 50%;
-                                                                "
-                                                            ></div>
-                                                            <div style="display: flex; align-items: center; justify-content: center;">
-                                                                <span class="material-icons" style="font-size: 2rem; color: #fe7b10;">add_a_photo</span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col">
-                                                    <div style="margin-bottom: 0.5rem;">
-                                                        <p style="margin: 0; font-weight: 500; text-transform: uppercase; color: #898989; font-size: 0.875rem;">VIN</p>
-                                                    </div>
-                                                    <div class="card image-picker">
-                                                        <div class="card-body" style="">
-                                                            <div
-                                                                class="image-picker-placeholder"
-                                                                style="
-                                                                    background: #fe7b10;
-                                                                    -webkit-mask-image: url(https://img.icons8.com/nolan/96/barcode.png);
-                                                                    -webkit-mask-repeat: no-repeat;
-                                                                    -webkit-mask-size: 25%;
-                                                                    -webkit-mask-position: 50%;
-                                                                "
-                                                            ></div>
-                                                            <div style="display: flex; align-items: center; justify-content: center;">
-                                                                <span class="material-icons" style="font-size: 2rem; color: #fe7b10;">add_a_photo</span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col">
-                                                    <div style="margin-bottom: 0.5rem;">
-                                                        <p style="margin: 0; font-weight: 500; text-transform: uppercase; color: #898989; font-size: 0.875rem;">Odometer</p>
-                                                    </div>
-                                                    <div class="card image-picker">
-                                                        <div class="card-body" style="">
-                                                            <div
-                                                                class="image-picker-placeholder"
-                                                                style="
-                                                                    background: #fe7b10;
-                                                                    -webkit-mask-image: url(https://img.icons8.com/ios-filled/100/000000/odometer.png);
-                                                                    -webkit-mask-repeat: no-repeat;
-                                                                    -webkit-mask-size: 25%;
-                                                                    -webkit-mask-position: 50%;
-                                                                "
-                                                            ></div>
-                                                            <div style="display: flex; align-items: center; justify-content: center;">
-                                                                <span class="material-icons" style="font-size: 2rem; color: #fe7b10;">add_a_photo</span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div id="condition_imgs_filled" style="padding: 1.5rem;">
-                                            <div class="row row-cols-1 row-cols-md-2 g-4">
-                                                <div class="col">
-                                                    <div style="margin-bottom: 0.5rem;">
-                                                        <p style="margin: 0; font-weight: 500; text-transform: uppercase; color: #898989; font-size: 0.875rem;">Front</p>
-                                                    </div>
-                                                    <div class="card image-picker">
-                                                        <div class="card-body" style="">
-                                                            <div
-                                                                class="image-picker-placeholder"
-                                                                style="
-                                                                    background-image: url(https://www.eaglerider.com/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBOGdaT2c9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--6125bab54f4cadb720f63f74a2f6a61c584424f5/3114953);
-                                                                    background-size: cover;
-                                                                    background-repeat: no-repeat;
-                                                                    background-position: 50% 50%;
-                                                                    border-radius: 2px;
-                                                                "
-                                                            >
-                                                                <img
-                                                                    src="https://www.eaglerider.com/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBOGdaT2c9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--6125bab54f4cadb720f63f74a2f6a61c584424f5/3114953"
-                                                                    style="width: inherit; height: inherit; visibility: hidden;"
-                                                                />
-                                                            </div>
-                                                            <div style="margin-top: 0.5rem;">
-                                                                <div style="display: flex; align-items: center;">
-                                                                    <div class="col-10">
-                                                                        <p style="font-size: 0.75rem; font-weight: 300; color: #3a3a3a; margin-bottom: 0;">Dec 1 2021, 12:45 PM</p>
-                                                                    </div>
-                                                                    <div class="col-2">
-                                                                        <span class="material-icons" style="color: #5d5d5d; float: right;">
-                                                                            delete_forever
-                                                                        </span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="col">
-                                                    <div style="margin-bottom: 0.5rem;">
-                                                        <p style="margin: 0; font-weight: 500; text-transform: uppercase; color: #898989; font-size: 0.875rem;">Left Side</p>
-                                                    </div>
-                                                    <div class="card image-picker">
-                                                        <div class="card-body" style="">
-                                                            <div
-                                                                class="image-picker-placeholder"
-                                                                style="
-                                                                    background-image: url(https://www.eaglerider.com/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBNzRaT2c9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--a58a98d3e3f469ded61483a0e2ae6e78aea4a2e1/3114953);
-                                                                    background-size: cover;
-                                                                    background-repeat: no-repeat;
-                                                                    background-position: 50% 50%;
-                                                                    border-radius: 2px;
-                                                                "
-                                                            >
-                                                                <img
-                                                                    src="https://www.eaglerider.com/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBOGdaT2c9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--6125bab54f4cadb720f63f74a2f6a61c584424f5/3114953"
-                                                                    style="width: inherit; height: inherit; visibility: hidden;"
-                                                                />
-                                                            </div>
-                                                            <div style="margin-top: 0.5rem;">
-                                                                <div style="display: flex; align-items: center;">
-                                                                    <div class="col-10">
-                                                                        <p style="font-size: 0.75rem; font-weight: 300; color: #3a3a3a; margin-bottom: 0;">Dec 1 2021, 12:45 PM</p>
-                                                                    </div>
-                                                                    <div class="col-2">
-                                                                        <span class="material-icons" style="color: #5d5d5d; float: right;">
-                                                                            delete_forever
-                                                                        </span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col">
-                                                    <div style="margin-bottom: 0.5rem;">
-                                                        <p style="margin: 0; font-weight: 500; text-transform: uppercase; color: #898989; font-size: 0.875rem;">Rear</p>
-                                                    </div>
-                                                    <div class="card image-picker">
-                                                        <div class="card-body" style="">
-                                                            <div
-                                                                class="image-picker-placeholder"
-                                                                style="
-                                                                    background-image: url(https://www.eaglerider.com/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBOFlaT2c9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--003248b244514e5dcae4fd91ed9dc24ee607c792/3114953);
-                                                                    background-size: cover;
-                                                                    background-repeat: no-repeat;
-                                                                    background-position: 50% 50%;
-                                                                    border-radius: 2px;
-                                                                "
-                                                            >
-                                                                <img
-                                                                    src="https://www.eaglerider.com/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBOGdaT2c9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--6125bab54f4cadb720f63f74a2f6a61c584424f5/3114953"
-                                                                    style="width: inherit; height: inherit; visibility: hidden;"
-                                                                />
-                                                            </div>
-                                                            <div style="margin-top: 0.5rem;">
-                                                                <div style="display: flex; align-items: center;">
-                                                                    <div class="col-10">
-                                                                        <p style="font-size: 0.75rem; font-weight: 300; color: #3a3a3a; margin-bottom: 0;">Dec 1 2021, 12:45 PM</p>
-                                                                    </div>
-                                                                    <div class="col-2">
-                                                                        <span class="material-icons" style="color: #5d5d5d; float: right;">
-                                                                            delete_forever
-                                                                        </span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col">
-                                                    <div style="margin-bottom: 0.5rem;">
-                                                        <p style="margin: 0; font-weight: 500; text-transform: uppercase; color: #898989; font-size: 0.875rem;">Right Side</p>
-                                                    </div>
-                                                    <div class="card image-picker">
-                                                        <div class="card-body" style="">
-                                                            <div
-                                                                class="image-picker-placeholder"
-                                                                style="
-                                                                    background-image: url(https://www.eaglerider.com/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBNzBaT2c9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--3f5255e543d70a774e08c58f8f3c7eea1fef2c57/3114953);
-                                                                    background-size: cover;
-                                                                    background-repeat: no-repeat;
-                                                                    background-position: 50% 50%;
-                                                                    border-radius: 2px;
-                                                                "
-                                                            >
-                                                                <img
-                                                                    src="https://www.eaglerider.com/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBOGdaT2c9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--6125bab54f4cadb720f63f74a2f6a61c584424f5/3114953"
-                                                                    style="width: inherit; height: inherit; visibility: hidden;"
-                                                                />
-                                                            </div>
-                                                            <div style="margin-top: 0.5rem;">
-                                                                <div style="display: flex; align-items: center;">
-                                                                    <div class="col-10">
-                                                                        <p style="font-size: 0.75rem; font-weight: 300; color: #3a3a3a; margin-bottom: 0;">Dec 1 2021, 12:45 PM</p>
-                                                                    </div>
-                                                                    <div class="col-2">
-                                                                        <span class="material-icons" style="color: #5d5d5d; float: right;">
-                                                                            delete_forever
-                                                                        </span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col">
-                                                    <div style="margin-bottom: 0.5rem;">
-                                                        <p style="margin: 0; font-weight: 500; text-transform: uppercase; color: #898989; font-size: 0.875rem;">VIN</p>
-                                                    </div>
-                                                    <div class="card image-picker">
-                                                        <div class="card-body" style="">
-                                                            <div
-                                                                class="image-picker-placeholder"
-                                                                style="
-                                                                    background-image: url(https://www.eaglerider.com/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBN1laT2c9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--1a05d4ee8064bf6727de77151f1f260469ee2995/3114953);
-                                                                    background-size: cover;
-                                                                    background-repeat: no-repeat;
-                                                                    background-position: 50% 50%;
-                                                                    border-radius: 2px;
-                                                                "
-                                                            >
-                                                                <img
-                                                                    src="https://www.eaglerider.com/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBOGdaT2c9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--6125bab54f4cadb720f63f74a2f6a61c584424f5/3114953"
-                                                                    style="width: inherit; height: inherit; visibility: hidden;"
-                                                                />
-                                                            </div>
-                                                            <div style="margin-top: 0.5rem;">
-                                                                <div style="display: flex; align-items: center;">
-                                                                    <div class="col-10">
-                                                                        <p style="font-size: 0.75rem; font-weight: 300; color: #3a3a3a; margin-bottom: 0;">Dec 1 2021, 12:45 PM</p>
-                                                                    </div>
-                                                                    <div class="col-2">
-                                                                        <span class="material-icons" style="color: #5d5d5d; float: right;">
-                                                                            delete_forever
-                                                                        </span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col">
-                                                    <div style="margin-bottom: 0.5rem;">
-                                                        <p style="margin: 0; font-weight: 500; text-transform: uppercase; color: #898989; font-size: 0.875rem;">Odometer</p>
-                                                    </div>
-                                                    <div class="card image-picker">
-                                                        <div class="card-body" style="">
-                                                            <div
-                                                                class="image-picker-placeholder"
-                                                                style="
-                                                                    background-image: url(https://www.eaglerider.com/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBNE1aT2c9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--952ea463e6cef8ef51988084dba6960de9d82eff/3114953);
-                                                                    background-size: cover;
-                                                                    background-repeat: no-repeat;
-                                                                    background-position: 50% 50%;
-                                                                    border-radius: 2px;
-                                                                "
-                                                            >
-                                                                <img
-                                                                    src="https://www.eaglerider.com/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBOGdaT2c9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--6125bab54f4cadb720f63f74a2f6a61c584424f5/3114953"
-                                                                    style="width: inherit; height: inherit; visibility: hidden;"
-                                                                />
-                                                            </div>
-                                                            <div style="margin-top: 0.5rem;">
-                                                                <div style="display: flex; align-items: center;">
-                                                                    <div class="col-10">
-                                                                        <p style="font-size: 0.75rem; font-weight: 300; color: #3a3a3a; margin-bottom: 0;">Dec 1 2021, 12:45 PM</p>
-                                                                    </div>
-                                                                    <div class="col-2">
-                                                                        <span class="material-icons" style="color: #5d5d5d; float: right;">
-                                                                            delete_forever
-                                                                        </span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+                                </div>
+                                <div style="margin-top: 2.5rem; display: none;">
+                                    <div class="btn-group-flex-left" style="">
+                                        <a
+                                            href="https://jascas93.github.io/professional-eaglerider-projects-membership-express/express_pickup_rf_agent_verification_not_started_verify.html"
+                                            id="submit_button"
+                                            class="btn btn-primary btn-lg btn-with-icon"
+                                            tabindex="-1"
+                                            role="button"
+                                            aria-disabled="false"
+                                        >
+                                            <span class="material-icons btn-icon" style="font-size: 22px; margin-right: 0.25rem;">sports_motorsports </span>Find My Rental
+                                        </a>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-lg-4">
-                                <div class="accordion visible-for-large" id="accordionExample" style="margin-bottom: 2rem; display: none;">
+                                <div class="accordion visible-for-large" id="accordion_lg_1" style="margin-bottom: 2rem; display: none;">
                                     <div class="accordion-item" style="border: 1px solid #ffac71; box-shadow: rgb(0 0 0 / 10%) 0px 1px 2px 0px;">
-                                        <h2 class="accordion-header" id="headingOne">
+                                        <h2 class="accordion-header" id="accordion_lg_hdr_1">
                                             <button
                                                 class="accordion-button"
                                                 type="button"
                                                 data-bs-toggle="collapse"
-                                                data-bs-target="#collapseOne"
+                                                data-bs-target="#accordion_lg_body_1"
                                                 aria-expanded="true"
-                                                aria-controls="collapseOne"
+                                                aria-controls="accordion_lg_body_1"
                                                 style="background: #ffecdd; font-weight: 600; text-transform: uppercase;"
                                             >
                                                 Reservation Details
                                             </button>
                                         </h2>
-                                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample" style="">
+                                        <div id="accordion_lg_body_1" class="accordion-collapse collapse show" aria-labelledby="accordion_lg_hdr_1" data-bs-parent="#accordion_lg_1" style="">
                                             <div class="accordion-body">
                                                 <div style="">
                                                     <div style="">
@@ -951,37 +1034,42 @@
                         </div>
                     </div>
                 </div>
-                <div id="main-canvas-sub-action-footer">
-                    <div class="container" style="border-top: 1px solid; border-left: 1px solid; border-right: 1px solid; border-color: #ffac71; border-top-left-radius: 8px; border-top-right-radius: 8px; background: #ffecdd;">
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="form-check" style="padding-top: 1rem; padding-bottom: 1rem;">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheck" onclick="checkbox_changed(this)" />
-                                    <label id="form_check_validate" class="form-check-label text-danger" for="flexCheck" style="font-weight: 500;">The renter's information is correct and valid</label>
+                <div>
+                    <div id="main-canvas-sub-action-footer">
+                        <div class="container" style="border-top: 1px solid; border-left: 1px solid; border-right: 1px solid; border-color: #ffac71; border-top-left-radius: 8px; border-top-right-radius: 8px; background: #ffecdd;">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="form-check" style="padding-top: 1rem; padding-bottom: 1rem;">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheck" onclick="checkbox_changed(this)" />
+                                        <label id="form_check_validate" class="form-check-label text-danger" for="flexCheck" style="font-weight: 500;">
+                                            By checking this button, you acknowledge that the information being submitted has been verified and is correct to the best of your ability
+                                        </label>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div id="main-canvas-footer">
-                    <div class="container sticky-action-bar-bottom-container">
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="" style="">
-                                    <div class="sticky-buttons-shift-to-small" style="display: flex; align-items: center; justify-content: flex-end;">
-                                        <a
-                                            href="https://jascas93.github.io/professional-eaglerider-projects-membership-express/express_pickup_af_verification_started_safety_check.html"
-                                            id="submit_button"
-                                            class="btn btn-primary btn-lg btn-with-icon disabled"
-                                            tabindex="-1"
-                                            role="button"
-                                            aria-disabled="true"
-                                        >
-                                            <span class="material-icons btn-icon" style="font-size: 22px; margin-right: 0.25rem;">
-                                                verified_user
-                                            </span>
-                                            Complete Safety Check
-                                        </a>
+                    <div id="main-canvas-footer" style="position: initial;">
+                        <div class="container sticky-action-bar-bottom-container">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="" style="">
+                                        <div class="sticky-buttons-shift-to-small" style="display: flex; align-items: center; justify-content: flex-end;">
+                                            <a href="#" id="back_button" class="btn btn-outline-secondary btn-lg btn-back-link" tabindex="-1" role="button" aria-disabled="false">Save &amp; Exit</a>
+                                            <a
+                                                href="https://jascas93.github.io/professional-eaglerider-projects-membership-express/express_pickup_af_verification_started_safety_check.html"
+                                                id="submit_button"
+                                                class="btn btn-primary btn-lg btn-with-icon disabled"
+                                                tabindex="-1"
+                                                role="button"
+                                                aria-disabled="true"
+                                            >
+                                                <span class="material-icons btn-icon" style="font-size: 22px; margin-right: 0.25rem;">
+                                                    verified_user
+                                                </span>
+                                                Complete Safety Check
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
