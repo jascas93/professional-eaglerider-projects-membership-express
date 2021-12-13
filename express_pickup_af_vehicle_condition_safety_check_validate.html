@@ -12,7 +12,7 @@
         <link href="https://jascas93.github.io/jascas-css-files-1/first.css" rel="stylesheet" />
     </head>
 
-    <body data-new-gr-c-s-check-loaded="14.1041.0" data-gr-ext-installed="" style="cursor: default;">
+    <body data-new-gr-c-s-check-loaded="14.1041.0" data-gr-ext-installed="" style="cursor: default;" data-gr-ext-disabled="forever">
         <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
             <symbol id="bootstrap" viewBox="0 0 118 94">
                 <title>Bootstrap</title>
@@ -979,19 +979,19 @@
                                         <div class="accordion-item" style="border-color: #5d5d5d; box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;">
                                             <h2 class="accordion-header" id="headingThree">
                                                 <button
-                                                    class="accordion-button collapsed"
+                                                    class="accordion-button"
                                                     type="button"
                                                     data-bs-toggle="collapse"
                                                     data-bs-target="#collapseThree"
-                                                    aria-expanded="false"
+                                                    aria-expanded="true"
                                                     aria-controls="collapseThree"
                                                     style="background-color: #f9f9f9; font-weight: 400; color: #797979;"
                                                 >
                                                     <span class="material-icons" style="margin-right: 0.25rem; color: #797979;">radio_button_unchecked </span>Safety Check Inspection
                                                 </button>
                                             </h2>
-                                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample" style="">
-                                                <div class="accordion-body">
+                                            <div id="collapseThree" class="accordion-collapse collapse show" aria-labelledby="headingThree" data-bs-parent="#accordionExample" style="">
+                                                <div class="accordion-body" style="padding: 0;">
                                                     <div style="">
                                                         <div style="">
                                                             <div style="padding: 1.5rem; background: #f9f9f9;">
@@ -1011,20 +1011,43 @@
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                            <div class="container">
-                                                                <div class="row">
-                                                                    <div class="col">
-                                                                        <p style="margin-bottom: 0; font-size: 0.9375rem; text-transform: uppercase; font-family: monospace; font-weight: 600; letter-spacing: 0.25px;">
-                                                                            Brake Light<span style="" class="text-danger">*</span>
-                                                                        </p>
+                                                            <div class="container" style="margin: 1rem 0;">
+                                                                <div style="background-color: #efefef; border: 1px solid #dadada;">
+                                                                    <div class="row" style="">
+                                                                        <div class="col" style="">
+                                                                            <p
+                                                                                style="
+                                                                                    margin-bottom: 0;
+                                                                                    font-size: 0.9375rem;
+                                                                                    font-family: monospace;
+                                                                                    text-transform: uppercase;
+                                                                                    font-weight: 600;
+                                                                                    font-style: italic;
+                                                                                    padding: calc(var(--bs-gutter-x) * 0.5);
+                                                                                    border-left: 3px solid #fe7b10;
+                                                                                    text-decoration: underline;
+                                                                                "
+                                                                            >
+                                                                                Lighting System / Hand Controls
+                                                                            </p>
+                                                                        </div>
                                                                     </div>
-                                                                    <div class="col-md-auto">
-                                                                        <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-                                                                            <input type="radio" class="btn-check" name="btnradio2" id="btnradio1-1" autocomplete="off" />
-                                                                            <label class="btn btn-outline-primary status-buttons" for="btnradio1-1">Pass</label>
+                                                                </div>
+                                                                <div class="safety-check-list" style="">
+                                                                    <div class="row" style="">
+                                                                        <div class="col">
+                                                                            <p style="margin-bottom: 0; font-size: 0.9375rem; text-transform: uppercase; font-family: monospace; font-weight: 600; letter-spacing: 0.25px;">
+                                                                                Brake Light<span style="" class="text-danger">*</span>
+                                                                            </p>
+                                                                        </div>
+                                                                        <div class="col-md-auto">
+                                                                            <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                                                                                <input type="radio" class="btn-check" name="btnradio2" id="btnradio1-1" autocomplete="off" />
+                                                                                <label class="btn btn-outline-primary status-buttons" for="btnradio1-1">Pass</label>
 
-                                                                            <input type="radio" class="btn-check" name="btnradio2" id="btnradio1-2" autocomplete="off" />
-                                                                            <label class="btn btn-outline-primary status-buttons" for="btnradio1-2">Fail</label>
+                                                                                <input type="radio" class="btn-check" name="btnradio2" id="btnradio1-2" autocomplete="off" />
+                                                                                <label class="btn btn-outline-primary status-buttons" for="btnradio1-2">Fail</label>
+                                                                            </div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
