@@ -923,7 +923,7 @@
                                                                                 <input type="radio" class="btn-check" name="btnradio" id="btnradio7" autocomplete="off" />
                                                                                 <label class="btn btn-outline-primary fuel-level-buttons" for="btnradio7">7</label>
 
-                                                                                <input type="radio" class="btn-check" name="btnradio" id="btnradio8" autocomplete="off" checked/>
+                                                                                <input type="radio" class="btn-check" name="btnradio" id="btnradio8" autocomplete="off" checked="" />
                                                                                 <label class="btn btn-outline-primary fuel-level-buttons" for="btnradio8" style="">8</label>
                                                                             </div>
                                                                             <div style="display: flex; align-items: center;">
@@ -979,22 +979,58 @@
                                         <div class="accordion-item" style="border-color: #5d5d5d; box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;">
                                             <h2 class="accordion-header" id="headingThree">
                                                 <button
-                                                    class="accordion-button collapsed"
+                                                    class="accordion-button"
                                                     type="button"
                                                     data-bs-toggle="collapse"
                                                     data-bs-target="#collapseThree"
-                                                    aria-expanded="false"
+                                                    aria-expanded="true"
                                                     aria-controls="collapseThree"
                                                     style="background-color: #f9f9f9; font-weight: 400; color: #797979;"
                                                 >
                                                     <span class="material-icons" style="margin-right: 0.25rem; color: #797979;">radio_button_unchecked </span>Safety Check Inspection
                                                 </button>
                                             </h2>
-                                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample" style="">
+                                            <div id="collapseThree" class="accordion-collapse collapse show" aria-labelledby="headingThree" data-bs-parent="#accordionExample" style="">
                                                 <div class="accordion-body">
-                                                    <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes
-                                                    control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth
-                                                    noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                                    <div style="">
+                                                        <div style="">
+                                                            <div style="padding: 1.5rem; background: #f9f9f9;">
+                                                                <div style="">
+                                                                    <div class="row">
+                                                                        <div class="col-lg-12">
+                                                                            <div style="display: flex; align-items: flex-start;">
+                                                                                <span class="material-icons-outlined" style="font-size: 18px; color: #3a3a3a; margin-right: 0.25rem;">
+                                                                                    info
+                                                                                </span>
+                                                                                <p style="margin: 0; font-weight: 300; font-size: 0.875rem; color: #3a3a3a;">
+                                                                                    Document the motorcycle's current condition. A minimum of 6 images are required — front, rear, left side, right side, vin, and odometer. You may take as
+                                                                                    many photos as needed to ensure full documentation of all existing conditions are recorded such as scatches, dents, pre-existing damage, etc.
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="container">
+                                                                <div class="row">
+                                                                    <div class="col">
+                                                                        <p style="margin-bottom: 0; font-size: 0.9375rem; text-transform: uppercase; font-family: monospace; font-weight: 600; letter-spacing: 0.25px;">
+                                                                            Brake Light<span style="" class="text-danger">*</span>
+                                                                        </p>
+                                                                    </div>
+                                                                    <div class="col-md-auto">
+                                                                        <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                                                                            <input type="radio" class="btn-check" name="btnradio" id="btnradio1-1" autocomplete="off" />
+                                                                            <label class="btn btn-outline-primary" for="btnradio1-1">Pass</label>
+
+                                                                            <input type="radio" class="btn-check" name="btnradio" id="btnradio1-2" autocomplete="off" />
+                                                                            <label class="btn btn-outline-primary" for="btnradio1-2">Fail</label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
