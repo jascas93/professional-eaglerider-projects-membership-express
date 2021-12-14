@@ -1875,8 +1875,8 @@
                                             <a href="#" id="back_button" class="btn btn-outline-secondary btn-lg btn-back-link" tabindex="-1" role="button" aria-disabled="false">Save &amp; Exit</a>
                                             <a
                                                 href="https://jascas93.github.io/professional-eaglerider-projects-membership-express/express_pickup_af_verification_started_safety_check.html"
-                                                id="submit_button"
-                                                class="btn btn-primary btn-lg btn-with-icon"
+                                                id="btn_complete_safety_check"
+                                                class="btn btn-primary btn-lg btn-with-icon disabled"
                                                 tabindex="-1"
                                                 role="button"
                                                 aria-disabled="true"
@@ -1981,15 +1981,15 @@
         </main>
         <script src="https://getbootstrap.com/docs/5.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
         <script type="text/javascript">
-            function checkbox_changed(t) {
+            function checkbox_changed(a) {
                 //If the checkbox has been checked
-                if (t.checked) {
+                if (a.checked) {
                     //Set the disabled property to FALSE and enable the button.
-                    document.getElementById("submit_button").classList.remove("disabled");
+                    document.getElementById("btn_complete_safety_check").classList.remove("disabled");
                     document.getElementById("form_check_validate").classList.remove("text-danger");
                 } else {
                     //Otherwise, disable the submit button.
-                    document.getElementById("submit_button").classList.add("disabled");
+                    document.getElementById("btn_complete_safety_check").classList.add("disabled");
                     document.getElementById("form_check_validate").classList.add("text-danger");
                 }
             }
