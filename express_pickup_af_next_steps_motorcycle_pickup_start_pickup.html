@@ -258,6 +258,26 @@
                 </div>
             </nav>
             <div id="main-canvas-wrapper">
+                <!-- Button trigger modal -->
+
+                <!-- Modal -->
+                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                ...
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Understood</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div id="main-canvas-body" style="">
                     <div class="container main-container-canvas" style="">
                         <div class="row">
@@ -341,7 +361,7 @@
                                                                 <div class="row" style="">
                                                                     <div class="col-xs-12 margin-b-1">
                                                                         <div style="">
-                                                                            <p style="margin: 0; font-weight: 500; text-transform: uppercase; color: #898989; font-size: 0.875rem;">Choosen Model</p>
+                                                                            <p style="margin: 0; font-weight: 500; text-transform: uppercase; color: #898989; font-size: 0.875rem;">Booked Model</p>
                                                                         </div>
                                                                         <div style="">
                                                                             <div style="display: flex; align-items: center;">
@@ -536,7 +556,7 @@
                                                                 <div class="row" style="">
                                                                     <div class="col-xs-12 margin-b-1">
                                                                         <div style="">
-                                                                            <p style="margin: 0; font-weight: 500; text-transform: uppercase; color: #898989; font-size: 0.875rem;">Choosen Model</p>
+                                                                            <p style="margin: 0; font-weight: 500; text-transform: uppercase; color: #898989; font-size: 0.875rem;">Booked Model</p>
                                                                         </div>
                                                                         <div style="">
                                                                             <div style="display: flex; align-items: center;">
@@ -635,8 +655,11 @@
                                 <div class="" style="">
                                     <div class="sticky-buttons-shift-to-small" style="display: flex; align-items: center; justify-content: flex-end;">
                                         <a href="#" id="back_button" class="btn btn-outline-secondary btn-lg btn-back-link" tabindex="-1" role="button" aria-disabled="false">Save &amp; Exit</a>
-                                        <a href="#" id="submit_button" class="btn btn-primary btn-lg btn-with-icon" tabindex="-1" role="button" aria-disabled="false">
+                                        <a href="#" id="submit_button" class="btn btn-primary btn-lg btn-with-icon" tabindex="-1" role="button" aria-disabled="false" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                                             <span class="material-icons btn-icon" style="font-size: 22px; margin-right: 0.25rem;">two_wheeler</span>Start Pick-up
+                                            <span class="material-icons" style="font-size: 22px; margin-left: 0.25rem;">
+                                                launch
+                                            </span>
                                         </a>
                                     </div>
                                 </div>
