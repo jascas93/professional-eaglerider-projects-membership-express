@@ -12,7 +12,7 @@
         <link href="https://jascas93.github.io/jascas-css-files-1/first.css" rel="stylesheet" />
     </head>
 
-    <body data-new-gr-c-s-check-loaded="14.1041.0" data-gr-ext-installed="" style="cursor: default;">
+    <body data-new-gr-c-s-check-loaded="14.1041.0" data-gr-ext-installed="" style="cursor: default;" data-gr-ext-disabled="forever">
         <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
             <symbol id="bootstrap" viewBox="0 0 118 94">
                 <title>Bootstrap</title>
@@ -286,7 +286,7 @@
                                     <span class="material-icons me-2">
                                         check_circle
                                     </span>
-                                    Successfully verified the primary renter's identity.<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                    Successfully verified the primary renter's identity and driver license documents.<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                                 </div>
                             </div>
                         </div>
@@ -352,7 +352,7 @@
                                                                 <div class="row" style="">
                                                                     <div class="col-xs-12 margin-b-1">
                                                                         <div style="">
-                                                                            <p style="margin: 0; font-weight: 500; text-transform: uppercase; color: #898989; font-size: 0.875rem;">Choosen Model</p>
+                                                                            <p style="margin: 0; font-weight: 500; text-transform: uppercase; color: #898989; font-size: 0.875rem;">Booked Model</p>
                                                                         </div>
                                                                         <div style="">
                                                                             <div style="display: flex; align-items: center;">
@@ -483,48 +483,24 @@
                                                         </div>
                                                     </li>
                                                     <li class="d-flex gap-4" style="display: flex; gap: 1.5rem;">
-                                                        <div style="width: 3rem; max-width: 3rem;">
-                                                            <div class="spinner-border" role="status" style="width: 43px; height: 43px; color: #019d9d;"></div>
-                                                        </div>
-
+                                                        <span class="material-icons" style="font-size: 3rem; color: #fe7b10;">check_circle </span>
                                                         <div>
-                                                            <p style="margin-bottom: 0; font-size: 1.125rem; font-weight: 600;">
-                                                                Renter Verification
-                                                                <span class="badge bg-secondary" style="margin-left: 0.5rem; background-color: #797979 !important; font-weight: 500; text-transform: uppercase;">Incomplete</span>
-                                                            </p>
-                                                            <p style="font-size: 0.875rem; margin-bottom: 0;">
-                                                                An agent is required to verify the renter's identity, driver license documents, and vehicle condition.
-                                                            </p>
-                                                            <div>
-                                                                <ul class="d-grid gap-1 my-2 list-unstyled" style="">
-                                                                    <li class="d-flex gap-4" style="display: flex; gap: 1.5rem;">
-                                                                        <span class="material-icons" style="color: #019d9d;">task_alt</span>
-                                                                        <div>
-                                                                            <p style="margin-bottom: 0; font-size: 0.9375rem; font-weight: 400; color: #3a3a3a;">Verify Renter Identity</p>
-                                                                        </div>
-                                                                    </li>
-
-                                                                    <li class="d-flex gap-4" style="display: flex; gap: 1.5rem;">
-                                                                        <span class="material-icons" style="color: #019d9d;">task_alt</span>
-                                                                        <div>
-                                                                            <p style="margin-bottom: 0; font-size: 0.9375rem; font-weight: 400; color: #3a3a3a;">Validate Driver License</p>
-                                                                        </div>
-                                                                    </li>
-                                                                    <li class="d-flex gap-4" style="display: flex; gap: 1.5rem;">
-                                                                        <span class="material-icons" style="color: #dadada;">highlight_off</span>
-                                                                        <div>
-                                                                            <p style="margin-bottom: 0; font-size: 0.9375rem; font-weight: 400; color: #3a3a3a;">Complete Vehicle Condition and Safety Check</p>
-                                                                        </div>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
+                                                            <p style="margin-bottom: 0; font-size: 1.125rem; font-weight: 600; color: #3a3a3a;">Renter Verification</p>
+                                                            <p style="font-size: 0.875rem; margin-bottom: 0; color: #797979;">Completed.</p>
+                                                        </div>
+                                                    </li>
+                                                    <li class="d-flex gap-4" style="display: flex; gap: 1.5rem;">
+                                                        <span class="material-icons" style="font-size: 3rem; color: #dadada;">error_outline </span>
+                                                        <div>
+                                                            <p style="margin-bottom: 0; font-size: 1.125rem; font-weight: 600; color: #3a3a3a;" class="text-danger">Vehicle Condition</p>
+                                                            <p style="font-size: 0.875rem; margin-bottom: 0; color: #797979;" class="text-danger">An agent will verify and finalize the motorcycle condition before handing you the keys.</p>
                                                         </div>
                                                     </li>
                                                     <li class="d-flex gap-4" style="display: flex; gap: 1.5rem;">
                                                         <span class="material-icons" style="font-size: 3rem; color: #dadada;">error_outline </span>
                                                         <div>
                                                             <p style="margin-bottom: 0; font-size: 1.125rem; font-weight: 600; color: #3a3a3a;" class="text-danger">Motorcycle Picked-up</p>
-                                                            <p style="font-size: 0.875rem; margin-bottom: 0; color: #797979;" class="text-danger">An agent will finalize the motorcycle pick-up before handing over the keys.</p>
+                                                            <p style="font-size: 0.875rem; margin-bottom: 0; color: #797979;" class="text-danger">The motorcycle was picked-up by the renter.</p>
                                                         </div>
                                                     </li>
                                                 </ul>
@@ -570,7 +546,7 @@
                                                                 <div class="row" style="">
                                                                     <div class="col-xs-12 margin-b-1">
                                                                         <div style="">
-                                                                            <p style="margin: 0; font-weight: 500; text-transform: uppercase; color: #898989; font-size: 0.875rem;">Choosen Model</p>
+                                                                            <p style="margin: 0; font-weight: 500; text-transform: uppercase; color: #898989; font-size: 0.875rem;">Booked Model</p>
                                                                         </div>
                                                                         <div style="">
                                                                             <div style="display: flex; align-items: center;">
@@ -669,8 +645,15 @@
                                 <div class="" style="">
                                     <div class="sticky-buttons-shift-to-small" style="display: flex; align-items: center; justify-content: flex-end;">
                                         <a href="#" id="back_button" class="btn btn-outline-secondary btn-lg btn-back-link" tabindex="-1" role="button" aria-disabled="false">Save &amp; Exit</a>
-                                        <a href="https://jascas93.github.io/professional-eaglerider-projects-membership-express/express_pickup_af_vehicle_condition_safety_check_validate.html" id="submit_button" class="btn btn-primary btn-lg btn-with-icon" tabindex="-1" role="button" aria-disabled="false">
-                                            <span class="material-icons btn-icon" style="font-size: 22px; margin-right: 0.25rem;">fact_check</span>Start Safety Check
+                                        <a
+                                            href="https://jascas93.github.io/professional-eaglerider-projects-membership-express/express_pickup_af_vehicle_condition_safety_check_validate.html"
+                                            id="submit_button"
+                                            class="btn btn-primary btn-lg btn-with-icon"
+                                            tabindex="-1"
+                                            role="button"
+                                            aria-disabled="false"
+                                        >
+                                            <span class="material-icons btn-icon" style="font-size: 22px; margin-right: 0.25rem;">fact_check</span>Verify Condition
                                         </a>
                                     </div>
                                 </div>
