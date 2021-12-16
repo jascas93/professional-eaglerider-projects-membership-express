@@ -811,7 +811,7 @@
                                 </div>
                             </div>
                             <div class="modal-footer">
-                                <a href="#" id="continue_button" class="btn btn-primary btn-lg btn-with-icon disabled" tabindex="-1" role="button" aria-disabled="false" data-bs-toggle="modal" data-bs-target="#showSignMethods">
+                                <a href="#" id="continue_button" class="btn btn-primary btn-lg btn-with-icon disabled" tabindex="-1" role="button" aria-disabled="false" data-bs-toggle="modal" data-bs-target="">
                                     <span class="material-icons btn-icon" style="font-size: 22px; margin-right: 0.25rem;">arrow_right</span>Continue
                                 </a>
                             </div>
@@ -1322,6 +1322,8 @@
             function removeSignData() {
                 document.getElementById("continue_button").classList.add("disabled");
                 document.getElementById("continue_button").setAttribute('data-bs-target', '');
+                $("#btnradio1").prop("checked", false);
+                $("#btnradio2").prop("checked", false);
             }
         </script>
     </body>
