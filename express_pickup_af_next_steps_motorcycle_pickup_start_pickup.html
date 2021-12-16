@@ -779,7 +779,7 @@
                         <div class="modal-content">
                             <div class="modal-header" style="border-bottom: 4px solid #fe7b10; background: #f9f9f9;">
                                 <h5 class="modal-title" id="staticBackdropLabel" style="text-transform: uppercase; font-weight: 900;">Choose a Signing Method</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="color: #fff;"></button>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="color: #fff;" onclick="removeSignData()"></button>
                             </div>
                             <div class="modal-body" style="padding: 1.5rem;">
                                 <div style="">
@@ -1316,6 +1316,10 @@
                     document.getElementById("continue_button").classList.add("disabled");
                     document.getElementById("continue_button").href = "#";
                 }
+            }
+            function removeSignData() {
+                document.getElementById("continue_button").classList.add("disabled");
+                document.getElementById("continue_button").href = "#";
             }
         </script>
     </body>
