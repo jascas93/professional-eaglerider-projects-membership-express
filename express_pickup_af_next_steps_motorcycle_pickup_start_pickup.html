@@ -785,17 +785,19 @@
                                 <div style="">
                                     <div class="row">
                                         <div class="col" style="margin: 1rem 0;">
-                                            <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-                                                <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" onclick="localSignChecked(this)" />
-                                                <label class="btn btn-outline-primary radio-buttons-group" for="btnradio1" style="max-width: 50%; width: 100%;">
-                                                    <span class="material-icons btn-icon" style="font-size: 22px; margin-right: 0.25rem;">system_update</span>On this device
-                                                </label>
+                                            <form id="radioGroup1">
+                                                <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                                                    <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" onclick="localSignChecked(this)" />
+                                                    <label class="btn btn-outline-primary radio-buttons-group" for="btnradio1" style="max-width: 50%; width: 100%;">
+                                                        <span class="material-icons btn-icon" style="font-size: 22px; margin-right: 0.25rem;">system_update</span>On this device
+                                                    </label>
 
-                                                <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off" onclick="externalSignChecked(this)" />
-                                                <label class="btn btn-outline-primary radio-buttons-group" for="btnradio2" style="max-width: 50%; width: 100%;">
-                                                    <span class="material-icons btn-icon" style="font-size: 22px; margin-right: 0.25rem;">mobile_screen_share</span>Send to Renter
-                                                </label>
-                                            </div>
+                                                    <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off" onclick="externalSignChecked(this)" />
+                                                    <label class="btn btn-outline-primary radio-buttons-group" for="btnradio2" style="max-width: 50%; width: 100%;">
+                                                        <span class="material-icons btn-icon" style="font-size: 22px; margin-right: 0.25rem;">mobile_screen_share</span>Send to Renter
+                                                    </label>
+                                                </div>
+                                            </form>
                                             <div class="btn-grp-shift-to-small" style="display: none; align-items: center; justify-content: space-evenly;">
                                                 <a href="#" id="submit_button" class="btn btn-primary btn-lg btn-with-icon" tabindex="-1" role="button" aria-disabled="false" data-bs-toggle="modal" data-bs-target="#showRentalContract">
                                                     <span class="material-icons btn-icon" style="font-size: 22px; margin-right: 0.25rem;">system_update</span>On this device
@@ -1321,6 +1323,7 @@
                 document.getElementById("continue_button").classList.add("disabled");
                 document.getElementById("continue_button").href = "#";
             }
+            $("#radioGroup1").trigger("reset");
         </script>
     </body>
 </html>
