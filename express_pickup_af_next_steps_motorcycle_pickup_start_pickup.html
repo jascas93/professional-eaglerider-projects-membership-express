@@ -1300,12 +1300,11 @@
                 if (a.checked) {
                     //Set the disabled property to FALSE and enable the button.
                     document.getElementById("continue_button").classList.remove("disabled");
-                    document.getElementById("continue_button").href = "#1";
                     document.getElementById("continue_button").setAttribute('data-bs-target', '#showSignPad');
                 } else {
                     //Otherwise, disable the submit button.
                     document.getElementById("continue_button").classList.add("disabled");
-                    document.getElementById("continue_button").href = "#";
+                    document.getElementById("continue_button").setAttribute('data-bs-target', '');
                 }
             }
             function externalSignChecked(b) {
@@ -1313,16 +1312,16 @@
                 if (b.checked) {
                     //Set the disabled property to FALSE and enable the button.
                     document.getElementById("continue_button").classList.remove("disabled");
-                    document.getElementById("continue_button").href = "#2";
+                    document.getElementById("continue_button").setAttribute('data-bs-target', '#showWaitingScreen');
                 } else {
                     //Otherwise, disable the submit button.
                     document.getElementById("continue_button").classList.add("disabled");
-                    document.getElementById("continue_button").href = "#";
+                    document.getElementById("continue_button").setAttribute('data-bs-target', '');
                 }
             }
             function removeSignData() {
                 document.getElementById("continue_button").classList.add("disabled");
-                document.getElementById("continue_button").href = "#";
+                document.getElementById("continue_button").setAttribute('data-bs-target', '');
             }
         </script>
     </body>
