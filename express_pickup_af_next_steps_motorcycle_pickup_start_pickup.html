@@ -786,12 +786,12 @@
                                     <div class="row">
                                         <div class="col" style="margin: 1rem 0;">
                                             <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-                                                <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" />
+                                                <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" onclick="localSignChecked(this)" />
                                                 <label class="btn btn-outline-primary radio-buttons-group" for="btnradio1" style="max-width: 50%;">
                                                     <span class="material-icons btn-icon" style="font-size: 22px; margin-right: 0.25rem;">system_update</span>On this device
                                                 </label>
 
-                                                <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off" />
+                                                <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off" onclick="externalSignChecked(this)" />
                                                 <label class="btn btn-outline-primary radio-buttons-group" for="btnradio2" style="max-width: 50%;">
                                                     <span class="material-icons btn-icon" style="font-size: 22px; margin-right: 0.25rem;">mobile_screen_share</span>Send to Renter
                                                 </label>
@@ -809,7 +809,7 @@
                                 </div>
                             </div>
                             <div class="modal-footer">
-                                <a href="#" id="sign_button" class="btn btn-primary btn-lg btn-with-icon" tabindex="-1" role="button" aria-disabled="false" data-bs-toggle="modal" data-bs-target="#showSignMethods">
+                                <a href="#" id="continue_button" class="btn btn-primary btn-lg btn-with-icon disabled" tabindex="-1" role="button" aria-disabled="false" data-bs-toggle="modal" data-bs-target="#showSignMethods">
                                     <span class="material-icons btn-icon" style="font-size: 22px; margin-right: 0.25rem;">arrow_right</span>Continue
                                 </a>
                             </div>
@@ -1292,5 +1292,31 @@
             </div>
         </main>
         <script src="https://getbootstrap.com/docs/5.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            function localSignChecked(a) {
+                //If the checkbox has been checked
+                if (a.checked) {
+                    //Set the disabled property to FALSE and enable the button.
+                    document.getElementById("continue_button").classList.remove("disabled");
+                    document.getElementById("continue_button").href = "#1";
+                } else {
+                    //Otherwise, disable the submit button.
+                    document.getElementById("continue_button").classList.add("disabled");
+                    document.getElementById("continue_button").href = "#";
+                }
+            }
+            function externalSignChecked(b) {
+                //If the checkbox has been checked
+                if (b.checked) {
+                    //Set the disabled property to FALSE and enable the button.
+                    document.getElementById("continue_button").classList.remove("disabled");
+                    document.getElementById("continue_button").href = "#2";
+                } else {
+                    //Otherwise, disable the submit button.
+                    document.getElementById("continue_button").classList.add("disabled");
+                    document.getElementById("continue_button").href = "#";
+                }
+            }
+        </script>
     </body>
 </html>
