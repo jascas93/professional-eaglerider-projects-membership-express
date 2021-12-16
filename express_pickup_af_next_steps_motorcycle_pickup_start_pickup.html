@@ -1301,6 +1301,7 @@
                     //Set the disabled property to FALSE and enable the button.
                     document.getElementById("continue_button").classList.remove("disabled");
                     document.getElementById("continue_button").href = "#1";
+                    document.getElementById("continue_button").setAttribute('data-bs-target', '#showSignPad');
                 } else {
                     //Otherwise, disable the submit button.
                     document.getElementById("continue_button").classList.add("disabled");
@@ -1323,20 +1324,6 @@
                 document.getElementById("continue_button").classList.add("disabled");
                 document.getElementById("continue_button").href = "#";
             }
-        </script>
-        <script>
-            $("#btnradio1").on("click", function () {
-                $('#continue_button').attr('data-bs-target','#showSignPad');
-            });
-        </script>
-        <script>
-            $(document).ready(function() {
-                $('#mod_cls').on('click', function () {
-                    $('#radioGroup1').trigger("reset");
-                })
-            });
-            $('#btnradio1').click(function() {
-
         </script>
     </body>
 </html>
