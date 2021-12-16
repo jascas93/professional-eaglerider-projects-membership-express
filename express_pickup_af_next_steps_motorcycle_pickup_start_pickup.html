@@ -12,7 +12,7 @@
         <link href="https://jascas93.github.io/jascas-css-files-1/first.css" rel="stylesheet" />
     </head>
 
-    <body data-new-gr-c-s-check-loaded="14.1041.0" data-gr-ext-installed="" style="cursor: default;" data-gr-ext-disabled="forever" class="">
+    <body data-new-gr-c-s-check-loaded="14.1042.0" data-gr-ext-installed="" style="cursor: default;" data-gr-ext-disabled="forever" class="">
         <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
             <symbol id="bootstrap" viewBox="0 0 118 94">
                 <title>Bootstrap</title>
@@ -258,8 +258,6 @@
                 </div>
             </nav>
             <div id="main-canvas-wrapper">
-                <!-- Button trigger modal -->
-
                 <!-- Modal -->
                 <div class="modal fade" id="showRentalContract" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="showRentalContractLabel1" style="display: none;" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered" style="max-width: 1200px; width: 100%;">
@@ -777,7 +775,7 @@
                     </div>
                 </div>
                 <div class="modal fade" id="showSignMethods" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="showSignMethodsLabel1" style="display: none;" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered" style="max-width: 1200px; width: 100%;">
+                    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered" style="">
                         <div class="modal-content">
                             <div class="modal-header" style="border-bottom: 4px solid #fe7b10; background: #f9f9f9;">
                                 <h5 class="modal-title" id="staticBackdropLabel" style="text-transform: uppercase; font-weight: 900;">Choose a Signing Method</h5>
@@ -786,41 +784,35 @@
                             <div class="modal-body" style="padding: 1.5rem;">
                                 <div style="">
                                     <div class="row">
-                                        <div class="col-lg-6" style="margin: 1rem 0;">
-                                            <a
-                                                href="#"
-                                                id="localSign"
-                                                class="btn btn-primary btn-lg btn-with-icon"
-                                                tabindex="-1"
-                                                role="button"
-                                                aria-disabled="false"
-                                                data-bs-toggle="modal"
-                                                data-bs-target="#staticBackdrop"
-                                                style="justify-content: center;"
-                                            >
-                                                <span class="material-icons btn-icon" style="font-size: 22px; margin-right: 0.25rem;">two_wheeler</span>Sign Here On this Device
-                                            </a>
-                                        </div>
+                                        <div class="col" style="margin: 1rem 0;">
+                                            <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                                                <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" />
+                                                <label class="btn btn-outline-primary radio-buttons-group" for="btnradio1" style="max-width: 50%;">
+                                                    <span class="material-icons btn-icon" style="font-size: 22px; margin-right: 0.25rem;">system_update</span>On this device
+                                                </label>
 
-                                        <div class="col-lg-6" style="margin: 1rem 0;">
-                                            <a
-                                                href="#"
-                                                id="externalSign"
-                                                class="btn btn-primary btn-lg btn-with-icon"
-                                                tabindex="-1"
-                                                role="button"
-                                                aria-disabled="false"
-                                                data-bs-toggle="modal"
-                                                data-bs-target="#staticBackdrop"
-                                                style="justify-content: center;"
-                                            >
-                                                <span class="material-icons btn-icon" style="font-size: 22px; margin-right: 0.25rem;">two_wheeler</span>Send to Renter's Device for Signing
-                                            </a>
+                                                <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off" />
+                                                <label class="btn btn-outline-primary radio-buttons-group" for="btnradio2" style="max-width: 50%;">
+                                                    <span class="material-icons btn-icon" style="font-size: 22px; margin-right: 0.25rem;">mobile_screen_share</span>Send to Renter
+                                                </label>
+                                            </div>
+                                            <div class="btn-grp-shift-to-small" style="display: none; align-items: center; justify-content: space-evenly;">
+                                                <a href="#" id="submit_button" class="btn btn-primary btn-lg btn-with-icon" tabindex="-1" role="button" aria-disabled="false" data-bs-toggle="modal" data-bs-target="#showRentalContract">
+                                                    <span class="material-icons btn-icon" style="font-size: 22px; margin-right: 0.25rem;">system_update</span>On this device
+                                                </a>
+                                                <a href="#" id="submit_button" class="btn btn-primary btn-lg btn-with-icon" tabindex="-1" role="button" aria-disabled="false" data-bs-toggle="modal" data-bs-target="#showRentalContract">
+                                                    <span class="material-icons btn-icon" style="font-size: 22px; margin-right: 0.25rem;">mobile_screen_share</span>Send to Renter
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="modal-footer"></div>
+                            <div class="modal-footer">
+                                <a href="#" id="sign_button" class="btn btn-primary btn-lg btn-with-icon" tabindex="-1" role="button" aria-disabled="false" data-bs-toggle="modal" data-bs-target="#showSignMethods">
+                                    <span class="material-icons btn-icon" style="font-size: 22px; margin-right: 0.25rem;">arrow_right</span>Continue
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
