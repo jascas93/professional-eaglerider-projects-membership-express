@@ -1322,8 +1322,8 @@
             function removeSignData() {
                 document.getElementById("continue_button").classList.add("disabled");
                 document.getElementById("continue_button").href = "#";
+                $("#radioGroup1").trigger("reset");
             }
-            $("#radioGroup1").trigger("reset");
         </script>
     </body>
 </html>
