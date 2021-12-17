@@ -825,7 +825,7 @@
                                 </div>
                             </div>
                             <div class="modal-footer">
-                                <a href="#" id="continue_button" class="btn btn-primary btn-lg btn-with-icon disabled" tabindex="-1" role="button" aria-disabled="false" data-bs-toggle="modal" data-bs-target="">
+                                <a href="#" id="continue_button" class="btn btn-primary btn-lg btn-with-icon" tabindex="-1" role="button" aria-disabled="false" data-bs-toggle="modal" data-bs-target="#showSignPad">
                                     <span class="material-icons btn-icon" style="font-size: 22px; margin-right: 0.25rem;">arrow_forward</span>Go to Sign
                                 </a>
                             </div>
@@ -843,7 +843,7 @@
                                 <div style="">
                                     <div>
                                         <div>
-                                            <canvas id="signature-pad" style="width: 100%; min-height: 200px; max-height: 300px; height: auto; background: #fff; border: 1px solid #aeaeae; cursor: crosshair;"></canvas>
+                                            <canvas id="signature-pad" style="width: 100%; min-height: 200px; max-height: 300px; height: auto; background: #fff; border: 1px solid #aeaeae; cursor: crosshair;" width="0" height="0"></canvas>
                                         </div>
                                         <div class="clear-btn" style="margin-top: 1rem;">
                                             <button class="btn btn-primary" type="button" style="background-color: transparent; color: #5d5d5d; border-color: #5d5d5d;" id="clearSign">Clear</button>
@@ -1396,6 +1396,22 @@
                             </div>
                         </div>
                         <div class="row">
+                            <div class="col-lg-12">
+                                <div class="alert alert-success alert-dismissible fade show d-flex align-items-center" role="alert">
+                                    <span class="material-icons me-2">
+                                        check_circle
+                                    </span>
+                                    Successfully completed the vehicle condition and safety check inspection.<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                </div>
+                                <div class="alert alert-primary alert-dismissible fade show d-flex align-items-center" role="alert">
+                                    <span class="material-icons me-2">
+                                        check_circle
+                                    </span>
+                                    You can now start the pick-up below!<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
                             <div class="col-lg-8">
                                 <div style="margin-bottom: 2rem;">
                                     <div class="card text-dark bg-light mb-3" style="background-color: #fff !important; box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px; margin-bottom: 0 !important;">
@@ -1751,7 +1767,16 @@
                                 <div class="" style="">
                                     <div class="sticky-buttons-shift-to-small" style="display: flex; align-items: center; justify-content: flex-end;">
                                         <a href="#" id="back_button" class="btn btn-outline-secondary btn-lg btn-back-link" tabindex="-1" role="button" aria-disabled="false">Save &amp; Exit</a>
-                                        <a href="#" id="submit_button" class="btn btn-primary btn-lg btn-with-icon btn--shockwave is-active" tabindex="-1" role="button" aria-disabled="false" data-bs-toggle="modal" data-bs-target="#showRentalContract">
+                                        <a
+                                            href="#"
+                                            id="submit_button"
+                                            class="btn btn-primary btn-lg btn-with-icon btn--shockwave is-active"
+                                            tabindex="-1"
+                                            role="button"
+                                            aria-disabled="false"
+                                            data-bs-toggle="modal"
+                                            data-bs-target="#showRentalContract"
+                                        >
                                             <span class="material-icons btn-icon" style="font-size: 22px; margin-right: 0.25rem;">two_wheeler</span>Start Pick-up
                                             <span class="material-icons" style="font-size: 22px; margin-left: 0.25rem;">
                                                 launch
