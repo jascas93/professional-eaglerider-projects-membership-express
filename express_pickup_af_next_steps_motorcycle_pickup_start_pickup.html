@@ -813,10 +813,10 @@
                                                 </div>
                                             </form>
                                             <div class="btn-grp-shift-to-small" style="display: none; align-items: center; justify-content: space-evenly;">
-                                                <a href="#" id="submit_button" class="btn btn-primary btn-lg btn-with-icon" tabindex="-1" role="button" aria-disabled="false" data-bs-toggle="modal" data-bs-target="#showRentalContract">
+                                                <a href="#" id="deviceSign" class="btn btn-primary btn-lg btn-with-icon" tabindex="-1" role="button" aria-disabled="false" data-bs-toggle="modal" data-bs-target="#showRentalContract">
                                                     <span class="material-icons btn-icon" style="font-size: 22px; margin-right: 0.25rem;">system_update</span>On this device
                                                 </a>
-                                                <a href="#" id="submit_button" class="btn btn-primary btn-lg btn-with-icon" tabindex="-1" role="button" aria-disabled="false" data-bs-toggle="modal" data-bs-target="#showRentalContract">
+                                                <a href="#" id="sendSign" class="btn btn-primary btn-lg btn-with-icon" tabindex="-1" role="button" aria-disabled="false" data-bs-toggle="modal" data-bs-target="#showRentalContract">
                                                     <span class="material-icons btn-icon" style="font-size: 22px; margin-right: 0.25rem;">mobile_screen_share</span>Send to Renter
                                                 </a>
                                             </div>
@@ -1751,7 +1751,7 @@
                                 <div class="" style="">
                                     <div class="sticky-buttons-shift-to-small" style="display: flex; align-items: center; justify-content: flex-end;">
                                         <a href="#" id="back_button" class="btn btn-outline-secondary btn-lg btn-back-link" tabindex="-1" role="button" aria-disabled="false">Save &amp; Exit</a>
-                                        <a href="#" id="submit_button" class="btn btn-primary btn-lg btn-with-icon" tabindex="-1" role="button" aria-disabled="false" data-bs-toggle="modal" data-bs-target="#showRentalContract">
+                                        <a href="#" id="submit_button" class="btn btn-primary btn-lg btn-with-icon btn--shockwave" tabindex="-1" role="button" aria-disabled="false" data-bs-toggle="modal" data-bs-target="#showRentalContract">
                                             <span class="material-icons btn-icon" style="font-size: 22px; margin-right: 0.25rem;">two_wheeler</span>Start Pick-up
                                             <span class="material-icons" style="font-size: 22px; margin-left: 0.25rem;">
                                                 launch
@@ -1858,7 +1858,7 @@
                     document.getElementById("continue_button").classList.remove("disabled");
                     document.getElementById("continue_button").setAttribute("data-bs-target", "#showSignPad");
                 } else {
-                    //Otherwise, disable the submit button.
+                    //Otherwise, disable the continue button.
                     document.getElementById("continue_button").classList.add("disabled");
                     document.getElementById("continue_button").setAttribute("data-bs-target", "");
                 }
@@ -1870,7 +1870,7 @@
                     document.getElementById("continue_button").classList.remove("disabled");
                     document.getElementById("continue_button").setAttribute("data-bs-target", "#showWaitingScreen");
                 } else {
-                    //Otherwise, disable the submit button.
+                    //Otherwise, disable the continue button.
                     document.getElementById("continue_button").classList.add("disabled");
                     document.getElementById("continue_button").setAttribute("data-bs-target", "");
                 }
