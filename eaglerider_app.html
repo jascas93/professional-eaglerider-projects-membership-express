@@ -17,7 +17,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet" />
     </head>
 
-    <body data-new-gr-c-s-check-loaded="14.1042.0" data-gr-ext-installed="" style="cursor: default;" data-gr-ext-disabled="forever">
+    <body data-new-gr-c-s-check-loaded="14.1042.0" data-gr-ext-installed="" style="cursor: default;" data-gr-ext-disabled="forever" class="">
         <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
             <symbol id="bootstrap" viewBox="0 0 118 94">
                 <title>Bootstrap</title>
@@ -255,37 +255,28 @@
                 <div class="modal fade" id="showRentalWidget" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="showSignPadLabel1" style="display: none;" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered modal-fullscreen-md-down" style="max-width: 1200px; width: 100%;">
                         <div class="modal-content">
-                            <div class="modal-header" style="border-bottom: 4px solid #fe7b10; background: #f9f9f9;">
-                                <h5 class="modal-title" id="staticBackdropLabel" style="text-transform: uppercase; font-weight: 900;">Please sign in the box below</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="color: #fff;"></button>
+                            <div class="modal-header" style="background: #f9f9f9; border-bottom: 0px;">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="color: #fff; margin: -0.5rem auto -0.5rem -0.5rem;"></button>
                             </div>
                             <div class="modal-body" style="background: #f9f9f9; padding: 1.5rem;">
-                                <div>
+                                <form _lpchecked="1">
                                     <div class="row">
-                                        <div class="col-md-12">
-                                            <h1>E-Signature</h1>
-                                            <p>Sign in the canvas below and save your signature as an image!</p>
+                                        <div class="col-sm-12">
+                                            <label for="exampleDataList" class="form-label">Where are you riding from?</label>
+                                            <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="City, airport, or pick-up location" />
+                                            <datalist id="datalistOptions">
+                                                <option value="Current Location"> </option>
+                                                <option value="Los Angeles"> </option>
+                                                <option value="Las Vegas"> </option>
+                                                <option value="Seattle"> </option>
+                                                <option value="Orlando"> </option>
+                                            </datalist>
                                         </div>
                                     </div>
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <canvas id="sig-canvas" width="620" height="160" style="border: 2px dotted #cccccc; border-radius: 15px; cursor: crosshair;">
-                                                Get a better browser, bro.
-                                            </canvas>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <button class="btn btn-primary" id="sig-submitBtn" style="display: none;">Submit Signature</button>
-                                            <button class="btn btn-default" id="sig-clearBtn">Clear Signature</button>
-                                        </div>
-                                    </div>
-                                </div>
+                                </form>
                             </div>
-                            <div class="modal-footer">
-                                <a href="#" id="sign_button" class="btn btn-primary btn-lg btn-with-icon" tabindex="-1" role="button" aria-disabled="false" data-bs-toggle="modal" data-bs-target="">
-                                    <span class="material-icons btn-icon" style="font-size: 22px; margin-right: 0.25rem;">done_all</span>Save &amp; Complete Pick-up
-                                </a>
+                            <div class="modal-footer gap-2">
+                                <a href="#" id="search_button" class="btn btn-primary" tabindex="-1" role="button" aria-disabled="false" data-bs-toggle="modal" data-bs-target="" style="width: 100%;">Search</a>
                             </div>
                         </div>
                     </div>
