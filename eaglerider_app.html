@@ -252,6 +252,44 @@
                 </div>
             </nav>
             <div id="main-canvas-wrapper">
+                <div class="modal fade" id="showRentalWidget" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="showSignPadLabel1" style="display: none;" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-fullscreen-md-down" style="max-width: 1200px; width: 100%;">
+                        <div class="modal-content">
+                            <div class="modal-header" style="border-bottom: 4px solid #fe7b10; background: #f9f9f9;">
+                                <h5 class="modal-title" id="staticBackdropLabel" style="text-transform: uppercase; font-weight: 900;">Please sign in the box below</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="color: #fff;"></button>
+                            </div>
+                            <div class="modal-body" style="background: #f9f9f9; padding: 1.5rem;">
+                                <div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <h1>E-Signature</h1>
+                                            <p>Sign in the canvas below and save your signature as an image!</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <canvas id="sig-canvas" width="620" height="160" style="border: 2px dotted #cccccc; border-radius: 15px; cursor: crosshair;">
+                                                Get a better browser, bro.
+                                            </canvas>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <button class="btn btn-primary" id="sig-submitBtn" style="display: none;">Submit Signature</button>
+                                            <button class="btn btn-default" id="sig-clearBtn">Clear Signature</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="#" id="sign_button" class="btn btn-primary btn-lg btn-with-icon" tabindex="-1" role="button" aria-disabled="false" data-bs-toggle="modal" data-bs-target="">
+                                    <span class="material-icons btn-icon" style="font-size: 22px; margin-right: 0.25rem;">done_all</span>Save &amp; Complete Pick-up
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div id="main-canvas-body" style="padding-bottom: 0;">
                     <div class="main-container-canvas" style="min-height: auto;">
                         <div class="row g-0">
@@ -374,7 +412,7 @@
                                 </div>
                                 <div
                                     style="
-                                        height: 450px;
+                                        height: 350px;
                                         background-image: url(https://photos.smugmug.com/Partners/H-D-Utah-Ride-2019/i-Zx2RTvv/0/9f8e72e2/XL/20190709_eaglerider_drew_martin_utah_ride_200-XL.jpg);
                                         background-size: cover;
                                         background-repeat: no-repeat;
@@ -393,7 +431,7 @@
                                         "
                                     ></div>
                                     <div style="position: absolute; top: 2rem; display: flex; justify-content: center;">
-                                        <a href="#" style="color: initial; text-decoration: none;">
+                                        <a href="#" style="color: initial; text-decoration: none;" id="widget_button" class="" tabindex="-1" role="button" aria-disabled="false" data-bs-toggle="modal" data-bs-target="#showRentalWidget">
                                             <div
                                                 style="
                                                     display: flex;
