@@ -1722,8 +1722,14 @@
         <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
         <script>
             $(window).on("load", function () {
-                $("#loading").hide();
-            });
+                setTimeout(removeLoader, 2000); //wait for page load PLUS two seconds.
+            })
+            function removeLoader(){
+                $( "#loading" ).fadeOut(500, function() {
+                    // fadeOut complete. Remove the loading div
+                    $( "#loading" ).hide();
+                })
+            }); 
         </script>
     </body>
 </html>
