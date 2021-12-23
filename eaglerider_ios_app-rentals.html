@@ -455,6 +455,9 @@
     </head>
 
     <body data-new-gr-c-s-check-loaded="14.1042.0" data-gr-ext-installed="" style="cursor: default; background: #f9f9f9;" data-gr-ext-disabled="forever" class="">
+        <div id="loading">
+            <p>Please wait...</p>
+        </div>
         <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
             <symbol id="bootstrap" viewBox="0 0 118 94">
                 <title>Bootstrap</title>
@@ -493,55 +496,25 @@
                 ></path>
             </symbol>
         </svg>
-        <app-root>
-            <style type="text/css">
-                #pre-bootstrap {
-                    background-color: #262626;
-                    bottom: 0px;
-                    left: 0px;
-                    position: fixed;
-                    right: 0px;
-                    top: 0px;
-                    z-index: 999999;
-                }
-
-                #pre-bootstrap div.messaging {
-                    color: #ffffff;
-                    font-family: monospace;
-                    left: 0px;
-                    margin-top: -37px;
-                    position: absolute;
-                    right: 0px;
-                    text-align: center;
-                    top: 50%;
-                }
-
-                #pre-bootstrap h1 {
-                    font-size: 26px;
-                    line-height: 35px;
-                    margin: 0px 0px 20px 0px;
-                }
-
-                #pre-bootstrap p {
-                    font-size: 18px;
-                    line-height: 14px;
-                    margin: 0px 0px 0px 0px;
-                }
-            </style>
-            <div id="pre-bootstrap">
-                <div class="messaging">
-                    <h1>
-                        App is Loading
-                    </h1>
-
-                    <p>
-                        Please stand by for your ticket to awesome-town!
-                    </p>
-                </div>
-            </div>
-        </app-root>
         <main>
             <style scoped="">
+                #loading {
+                    position: fixed;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                    opacity: 0.7;
+                    background-color: #fff;
+                    z-index: 99;
+                }
+
+                #loading-image {
+                    z-index: 100;
+                }
                 .hdr-light {
                     background-color: #fff !important;
                     padding: 0.5rem 1rem;
@@ -1700,5 +1673,10 @@
             </div>
         </main>
         <script src="https://getbootstrap.com/docs/5.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <script>
+            $(window).on('load', function () {
+                $('#loading').hide();
+            })
+        </script>
     </body>
 </html>
